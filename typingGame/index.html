@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body >
+    <header class="text-center p-3 mb-4 fst-italic ">
+        <h2>타이핑 마스터</h2>
+    </header>
+    <div class="container text-center ">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <p class="lead fs-6">주어진 단어를 <span class="fw-bold text-decoration-underline">10</span>초 안에 타이핑 하기</p>
+           
+            <h2 class="mb-5" id="current-word">Start</h2>
+            <input type="text" class="form-control form-control-lg" placeholder="" id="word-input">
+<h4 class="mt-3" id="message"></h4>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div clas="col-md-12 col-xl-6">
+            <h5>남은 시간:
+            <span id="time">0</span>
+            </h5>
+        </div>
+        <div clas="col-md-12 col-xl-6">
+            <h5>
+                점수:
+                <span id="score">0</span>
+            </h5>
+        </div>
+        <div class="row mt-5 " >
+            <div class="col">
+                <div class="card card-body bg-danger text-white">
+                    <h6>안내방법</h6>
+                    <p>
+                        각 단어를 주어진 시간 안에 타이핑하고<br>
+                        다시 시작하려면 주어진 단어를 입력하세요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
